@@ -1,0 +1,47 @@
+{
+    "img_format": ".jpg",
+    "img_size": 120,
+    "img_num_channels": 3,
+    "classes" : [
+        {
+            "name" : "dog",
+            "img_path" : ".\\img\\dogs",
+            "num_valuate" : 100
+        },
+        {
+            "name" : "cat",
+            "img_path" : ".\\img\\cats",
+            "num_valuate" : 100
+        }
+        
+    ],
+    "learning_rate": 0.001,
+    "batch_size": 30,
+    "model_path" : ".\\model\\",
+    "model_name" : "model_cat_dog",
+    "convolution_filters" : [
+        {
+            "filter_size" : 3,
+            "num_filters" : 32
+        },
+        {
+            "filter_size" : 3,
+            "num_filters" : 32
+        },
+        {
+            "filter_size" : 3,
+            "num_filters" : 64
+        }
+    ],
+    "full_connected" : [
+        {
+            "output_size" : 128,
+            "use_relu" : true
+        },
+        {
+            "output_size" : 2,
+            "use_relu" : false
+        }
+    ]
+
+}

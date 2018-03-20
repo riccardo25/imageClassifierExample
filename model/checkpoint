@@ -1,0 +1,2 @@
+model_checkpoint_path: "model_cat_dog"
+all_model_checkpoint_paths: "model_cat_dog"
